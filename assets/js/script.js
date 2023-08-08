@@ -9,13 +9,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 let gameType = this.getAttribute("data-type");
                 alert(`You clicked ${gameType}`)
             }
-
         })
     }
 })
 
+/**
+ * The main game "loop", called when the script is first loaded 
+ * and after the user's answer has been processed
+ */
 function runGame() {
 
+    //creates two random numbers between 1 and 25
+    num1 = Math.float(Math.random() * 25) + 1;
+    num2 = Math.float(Math.random() * 25) + 1;
 }
 
 function checkAnswer() {
